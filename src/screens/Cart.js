@@ -15,7 +15,7 @@ export default function Cart() {
   const handleCheckOut = async () => {
     let userEmail = localStorage.getItem("Email");
 
-    let response = await fetch("https://kmit.onrender.com/OrderData", {
+    let response = await fetch("http://localhost:5000/OrderData", {
       // credentials: 'include',
       // Origin:"http://localhost:3000/login",
       method: "POST",
